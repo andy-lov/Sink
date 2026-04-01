@@ -5,6 +5,13 @@ import { currentLocales } from './i18n/i18n'
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   extends: ['./layers/dashboard'],
+  app: {
+    head: {
+      meta: [
+        { name: 'robots', content: 'noindex, nofollow' }
+      ],
+    }
+  },
   modules: [
     '@nuxtjs/color-mode',
     '@nuxtjs/i18n',
