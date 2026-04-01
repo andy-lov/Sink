@@ -31,7 +31,7 @@ useHead({
   link: [
     {
       rel: 'canonical',
-      href: computed(() => `https://sink.cool${route.path}`),
+      href: computed(() => `https://blyn.link${route.path}`),
     },
     {
       rel: 'icon',
